@@ -1,0 +1,7 @@
+extend layout
+block content
+   h2 Map showing amount collected by location
+   script var markers = !{JSON.stringify(locals.docsJSON)}
+   div(data-locations=locals.docsJSON, id='map-canvas')
+   script(src='https://maps.googleapis.com/maps/api/js?v=3.exp')
+   script(src='/javascripts/maps.js')

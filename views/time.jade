@@ -1,0 +1,8 @@
+extend layout
+block content
+    h2 Average time of day for donations
+    section.everything
+      br
+      div(id='graph', class='aGraph', style='position:absolute;top:0px;left:0; float:left;')
+        script(src='http://d3js.org/d3.v3.min.js')
+        script(src='/javascripts/time-analytics.js')

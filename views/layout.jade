@@ -1,0 +1,28 @@
+doctype
+html
+  head
+    title #{title} - Digital Bucket
+    link(href='http://fonts.googleapis.com/css?family=Lato', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/styles.css')
+  body
+    header
+      img.pull-left(src='/images/appicon_40.png' alt='app icon')
+      a(href='/')
+        h1 The Digital Bucket
+      div.pull-right
+        ul
+          li
+            a(href='/map') Map
+          li
+            a(href='/analytics') Week Trends
+          li
+            a(href='/time') Day Trends
+          li
+            a(href='/settings') Settings
+    .container
+      .main-content
+        block content
+      .sidebar
+        block sidebar
+    footer
+      p The as-op-gm integrated <b> Digital Bucket </b> hosted managed donating platform solution
